@@ -5,6 +5,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: quicksand-regular;
+  src: url("/assets/fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: quicksand-light;
+  src: url("/assets/fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: quicksand-bold;
+  src: url("/assets/fonts/Quicksand-Bold.ttf");
+}
+
 .block {
   display: block;
 }
