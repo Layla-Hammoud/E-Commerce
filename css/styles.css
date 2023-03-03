@@ -4,3 +4,15 @@
   border: 0;
   box-sizing: border-box;
 }
+
+.block {
+  display: block;
+}
+
+.hide {
+  display: hide;
+}
+
+.flex {
+  display: flex;
+}
