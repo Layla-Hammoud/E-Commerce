@@ -69,3 +69,11 @@
   height: 10vh;
   border: 2px #f3f3f3 solid;
 }
+
+.navbar-search-input {
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 5px 0 0 5px;
+}
