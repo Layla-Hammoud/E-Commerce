@@ -77,3 +77,11 @@
   background-color: #f3f3f3;
   border-radius: 5px 0 0 5px;
 }
+
+.navbar-search-input-img {
+  background-color: #3bb77e;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+}
