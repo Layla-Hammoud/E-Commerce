@@ -8,11 +8,40 @@
 .block {
   display: block;
 }
-
 .hide {
   display: hide;
 }
 
 .flex {
   display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-start {
+  justify-content: flex-start;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-se {
+  justify-content: space-evenly;
+}
+.ai-center {
+  align-items: center;
+}
+.ai-start {
+  align-items: flex-start;
+}
+.ai-end {
+  align-items: flex-end;
 }
