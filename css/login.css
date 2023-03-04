@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block {
+  display: block;
+}
+.hide {
+  display: hide;
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-start {
+  justify-content: flex-start;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-se {
+  justify-content: space-evenly;
+}
+.ai-center {
+  align-items: center;
+}
+.ai-start {
+  align-items: flex-start;
+}
+.ai-end {
+  align-items: flex-end;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.log_in_image {
+  height: 100vh;
+  width: 50%;
+  border: solid;
+  background-image: url(../assets/images/Paper\ shopping\ bag\ full\ of\ groceries\ products\ vector\ image\ on\ VectorStock.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.log_in_forum {
+  width: 50%;
+
+  padding-top: 10px;
+}
+
+.input_fields {
+  height: 33%;
+  width: 100%;
+  margin-top: auto;
+}
+
+input[type="text"] {
+  border: solid;
+  height: 40%;
+  margin: auto;
+  width: 50%;
+  border: none;
+  border-bottom: 2px solid black;
+}
+::placeholder {
+  font-weight: bolder;
+  color: black;
+  font-size: medium;
+}
+input[type="submit"] {
+  border: solid;
+  height: 40px;
+  width: 70px;
+  border-radius: 16px;
+  font-size: medium;
+  font-weight: bold;
+}
+.email {
+  height: 100%;
+  width: 100%;
+}
+.password {
+  height: 100%;
+  width: 100%;
+}
+.buttons {
+  height: 20%;
+  width: 50%;
+  margin: auto;
+}
+
+.logos {
+  height: 30%;
+  width: 100%;
+
+  margin: auto;
+}
+
+img {
+  height: 40%;
+}
+i {
+  width: 5%;
+  align-self: center;
+}
+
+p {
+  align-self: center;
+  width: 50%;
+}
+@media only screen and (max-width: 870px) {
+  .log_in_forum {
+    width: 100%;
+    height: 100%;
+  }
+  .log_in_image {
+    width: 100%;
+    height: 100%;
+  }
+  .input_fields {
+    margin-top: 20px;
+  }
+  ::placeholder {
+    font-size: larger;
+  }
+}
