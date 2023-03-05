@@ -119,11 +119,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: quicksand-regular;
 }
 .mainicon > * {
+  font-family: quicksand-regular;
   padding: 0 5px;
 }
 
 .support {
-  width: 15%;
+  width: 17%;
+  font-family: quicksand-regular;
+}
+
+.mh-phonenumber {
+  color: #3bb77e;
 }
