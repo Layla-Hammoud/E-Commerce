@@ -172,3 +172,9 @@
   justify-content: center;
   align-self: flex-end;
 }
+
+.categories {
+  width: 100vw;
+  height: 40vh;
+  padding: 50px;
+}
