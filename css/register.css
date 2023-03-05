@@ -297,9 +297,9 @@ h1 {
   width: 70%;
   margin: 30px;
 }
-
-.username {
-  margin: 10px;
+.user {
+  width: 70%;
+  margin: 30px;
 }
 
 .Email {
@@ -325,14 +325,9 @@ h1 {
   background-color: #3bb77e;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 30px;
-  margin-bottom: 0px;
+
   color: #d2efe1;
   font-weight: bolder;
   font-family: quicksand-regular;
   font-size: larger;
-}
-
-h3 {
-  color: #d2efe1;
-  margin: 10px;
 }
