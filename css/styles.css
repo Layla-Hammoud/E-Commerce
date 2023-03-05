@@ -178,3 +178,9 @@
   height: 40vh;
   padding: 50px;
 }
+
+.section-title {
+  font-family: quicksand-bold;
+  color: #333;
+  font-size: 32px;
+}
