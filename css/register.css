@@ -270,6 +270,7 @@ h1 {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  flex-wrap: wrap;
 }
 
 .sign_text {
@@ -330,4 +331,41 @@ h1 {
   font-weight: bolder;
   font-family: quicksand-regular;
   font-size: larger;
+}
+
+h3 {
+  color: #f3f3f3;
+}
+@media only screen and (max-width: 700px) {
+  .sign_wrapper {
+    height: 110vh;
+  }
+  .phonum_user {
+    width: 100%;
+    margin: 0px;
+  }
+  .phonum {
+    width: 100%;
+    margin: 0px;
+  }
+  .user {
+    width: 100%;
+    margin: 0px;
+  }
+  .sign_img {
+    width: 100vw;
+  }
+  .sign_text {
+    width: 100vw;
+  }
+  .fname {
+    margin: 10px;
+  }
+  .lname {
+    margin: 10px;
+  }
+  .signup_btn {
+    height: 10%;
+    width: 10%;
+  }
 }
