@@ -73,7 +73,7 @@
 .ai-end {
   align-items: flex-end;
 }
-/*-----------------HSN----------------------------*/
+/*-----------------SignIn----------------------------*/
 
 .login_wrapper {
   height: 100vh;
@@ -82,16 +82,9 @@
   flex-wrap: wrap;
 }
 
-.sign_wrapper {
-  height: 110vh;
-  width: 100vw;
-  border: 2px solid;
-}
-
 .pass_wrapper {
   height: 100vh;
   width: 100vw;
-  border: 2px solid;
 }
 
 img {
@@ -270,4 +263,76 @@ h1 {
     text-align: center;
     width: 100vw;
   }
+}
+/*-----------------SignUp----------------------------*/
+
+.sign_wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.sign_text {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-image: linear-gradient(#333333, #3bb77e);
+}
+.sign_img {
+  width: 50%;
+  border: solid #333333;
+  height: 100%;
+}
+
+.name {
+  margin: 30px;
+  width: 70%;
+}
+
+.phonum_user {
+  margin: 30px;
+}
+
+.phonum {
+  width: 70%;
+  margin: 30px;
+}
+
+.username {
+  margin: 10px;
+}
+
+.Email {
+  width: 70%;
+  margin: 30px;
+}
+
+.address {
+  width: 70%;
+  margin: 30px;
+}
+
+.location {
+  width: 70%;
+  margin: 30px;
+}
+
+.signup_btn {
+  height: 40px;
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 16px;
+  background-color: #3bb77e;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 30px;
+  margin-bottom: 0px;
+  color: #d2efe1;
+  font-weight: bolder;
+  font-family: quicksand-regular;
+  font-size: larger;
+}
+
+h3 {
+  color: #d2efe1;
+  margin: 10px;
 }
