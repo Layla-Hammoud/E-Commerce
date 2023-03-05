@@ -190,6 +190,8 @@ img {
   color: #333;
   font-size: 32px;
   margin: auto;
+  width: 400px;
+  text-align: center;
 }
 
 .all-categories {
@@ -229,6 +231,12 @@ img {
 .products {
   width: 100vw;
   padding: 20px 100px;
+}
+.countdown {
+  font-family: quicksand-bold;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: rgb(223, 55, 55);
 }
 .all-products {
   width: 90%;
