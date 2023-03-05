@@ -314,3 +314,31 @@ img {
 .ad2 {
   background-color: #fff6e5;
 }
+
+.special {
+  width: 100vw;
+  height: 20vh;
+}
+
+.special-section {
+  padding: 10px;
+  width: 20%;
+}
+
+.special-sec-image {
+  width: 30%;
+  margin-right: 10px;
+}
+.special-sec-text > p {
+  padding: 10px;
+}
+
+.special-title {
+  font-family: quicksand-bold;
+  color: #333;
+  font-size: 20px;
+}
+.special-subtitle {
+  font-family: quicksand-regular;
+  color: #a4a4a4;
+}
