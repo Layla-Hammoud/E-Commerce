@@ -22,7 +22,7 @@
   display: block;
 }
 .hide {
-  display: hide;
+  display: none;
 }
 
 .flex {
@@ -143,4 +143,29 @@
   background-size: cover;
   background-color: #c5ead9;
   background-blend-mode: multiply;
+}
+
+.content {
+  width: 65%;
+  height: 70%;
+}
+.main-text {
+  font-family: quicksand-bold;
+  color: #333;
+  font-size: 55px;
+}
+.sub-text {
+  font-family: quicksand-regular;
+  color: #333;
+  font-size: 30px;
+}
+
+.ad-img {
+  width: 35%;
+  height: 100%;
+  background-image: url("/assets/images/ad-img.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-self: flex-end;
 }
