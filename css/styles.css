@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/* img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
 @font-face {
   font-family: quicksand-regular;
   src: url("/assets/fonts/Quicksand-Regular.ttf");
@@ -22,7 +28,7 @@
   display: block;
 }
 .hide {
-  display: hide;
+  display: none;
 }
 
 .flex {
@@ -71,7 +77,7 @@
 }
 
 .navbar-search-input {
-  width: 300px;
+  width: 400px;
   height: 40px;
   padding: 20px;
   background-color: #f3f3f3;
@@ -84,4 +90,134 @@
   width: 40px;
   padding: 5px;
   border-radius: 0 5px 5px 0;
+}
+
+.navbar-icons {
+  width: 30%;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.navbar-icon {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+.icon-text {
+  color: #333;
+  font-size: 15px;
+  font-family: quicksand-bold;
+}
+
+.mainbar {
+  width: 100vw;
+  height: 5vh;
+}
+
+.mainicons {
+  width: 40%;
+}
+.mainicon {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: quicksand-regular;
+}
+.mainicon > * {
+  font-family: quicksand-regular;
+  padding: 0 5px;
+}
+.mainicon-text-home {
+  color: #3bb77e;
+}
+
+.support {
+  width: 17%;
+  font-family: quicksand-regular;
+}
+
+.mh-phonenumber {
+  color: #3bb77e;
+}
+
+.ads {
+  height: 60vh;
+  width: 100vw;
+  background-image: url("/assets/images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c5ead9;
+  background-blend-mode: multiply;
+}
+
+.content {
+  width: 65%;
+  height: 70%;
+}
+.main-text {
+  font-family: quicksand-bold;
+  color: #333;
+  font-size: 55px;
+}
+.sub-text {
+  font-family: quicksand-regular;
+  color: #333;
+  font-size: 30px;
+}
+
+.ad-img {
+  width: 35%;
+  height: 100%;
+  background-image: url("/assets/images/ad-img.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.categories {
+  width: 100vw;
+  height: 50vh;
+  padding: 50px 100px;
+}
+
+.section-title {
+  font-family: quicksand-bold;
+  color: #333;
+  font-size: 32px;
+  margin: auto;
+}
+
+.all-categories {
+  width: 90%;
+  height: 90%;
+  padding: 20px 0;
+  margin: auto;
+  overflow-x: scroll;
+}
+
+.category-card {
+  height: 100%;
+  min-width: 180px;
+  padding: 10px;
+  background-color: #def9ec;
+  margin: 0 10px;
+}
+.category-img {
+  height: 60%;
+}
+.category-text {
+  height: 40%;
+  text-align: center;
+  color: #333;
+}
+.category-title {
+  font-family: quicksand-bold;
+}
+.category-sub {
+  font-family: quicksand-light;
 }
