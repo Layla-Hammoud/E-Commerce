@@ -11,12 +11,25 @@
   color: #333333;
 }
 
+@font-face {
+  font-family: quicksand-regular;
+  src: url("/assets/fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: quicksand-light;
+  src: url("/assets/fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: quicksand-bold;
+  src: url("/assets/fonts/Quicksand-Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: quicksand-regular;
 }
 
 .block {
@@ -63,7 +76,8 @@
 .login_wrapper {
   height: 100vh;
   width: 100vw;
-  border: 2px solid;
+
+  background-color: #d2efe1;
 }
 
 .sign_wrapper {
@@ -76,4 +90,69 @@
   height: 100vh;
   width: 100vw;
   border: 2px solid;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+.login_text {
+  height: 100%;
+  width: 55%;
+}
+.input_fields {
+  height: 40%;
+  width: 100%;
+
+  margin: auto;
+}
+input[type="text"] {
+  border: 2px solid #333333;
+  background-color: #d2efe1;
+  padding: 6px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+input[type="password"] {
+  margin-top: 20px;
+  background-color: #d2efe1;
+  border: 2px solid #333333;
+  padding: 6px;
+  border-radius: 16px;
+}
+::placeholder {
+  font-size: x-large;
+  margin: auto;
+  background-color: #d2efe1;
+  color: #333333;
+}
+
+.login_img {
+  height: 100%;
+  width: 45%;
+}
+
+.input_fields p {
+  font-size: large;
+}
+
+.email {
+  width: 40%;
+}
+.password {
+  width: 40%;
+  height: 50%;
+}
+i {
+  height: 50%;
+}
+.logos {
+  height: 30%;
+  width: 100%;
+
+  margin: auto;
+}
+
+.logos img {
+  height: 40%;
 }
