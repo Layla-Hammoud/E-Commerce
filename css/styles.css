@@ -105,3 +105,21 @@
   font-size: 15px;
   font-family: quicksand-bold;
 }
+
+.mainbar {
+  width: 100vw;
+  height: 10vh;
+}
+
+.mainicons {
+  width: 40%;
+}
+.mainicon {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainicon > * {
+  padding: 0 5px;
+}
