@@ -285,3 +285,24 @@ img {
   border-radius: 5px;
   background-color: #cfffe6;
 }
+
+.mid-ad {
+  width: 100vw;
+  height: 40vh;
+}
+.ad {
+  height: 30vh;
+  width: 80vh;
+  background-image: url("/assets/images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c5ead9;
+  background-blend-mode: multiply;
+}
+
+.ad1 {
+  background-color: #cfffe6;
+}
+.ad2 {
+  background-color: #fff6e5;
+}
