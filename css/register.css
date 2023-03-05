@@ -1,0 +1,79 @@
+.colorwhite {
+  color: #f3f3f3;
+}
+.colorwhiteshade {
+  background-color: #d2efe1;
+}
+.colorgreen {
+  background-color: #3bb77e;
+}
+.colorblack {
+  color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-start {
+  justify-content: flex-start;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-se {
+  justify-content: space-evenly;
+}
+.ai-center {
+  align-items: center;
+}
+.ai-start {
+  align-items: flex-start;
+}
+.ai-end {
+  align-items: flex-end;
+}
+
+.login_wrapper {
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid;
+}
+
+.sign_wrapper {
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid;
+}
+
+.pass_wrapper {
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid;
+}
