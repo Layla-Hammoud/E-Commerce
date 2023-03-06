@@ -105,7 +105,7 @@ img {
 input[type="text"] {
   border: 2px solid #333333;
   background-color: #d2efe1;
-  padding: 12px;
+  padding: 6px;
   border-radius: 16px;
   margin-top: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -114,12 +114,12 @@ input[type="password"] {
   margin-top: 10px;
   background-color: #d2efe1;
   border: 2px solid #333333;
-  padding: 12px;
+  padding: 6px;
   border-radius: 16px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 ::placeholder {
-  font-size: x-large;
+  font-size: large;
   margin: auto;
   background-color: #d2efe1;
   color: #333333;
@@ -147,7 +147,7 @@ i {
 }
 .buttons {
   width: 70%;
-  height: 33%;
+  height: 100%;
   margin: auto;
   margin-top: 10px;
 }
@@ -159,7 +159,7 @@ i {
 }
 
 .forgot_pass input[type="Submit"] {
-  height: 20%;
+  height: 100%;
   width: 20%;
   background-color: #333333;
   border-radius: 8px;
@@ -169,10 +169,10 @@ i {
 }
 
 .btn {
-  height: 15%;
-  width: 20%;
+  height: 65%;
+  width: 19%;
   border: 2px solid #333333;
-  border-radius: 8px;
+  border-radius: 6px;
   margin-right: auto;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 15px;
@@ -201,75 +201,11 @@ h1 {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .login_wrapper {
-    overflow-x: hidden;
-  }
-  .login_text {
-    width: 100%;
-    height: 100%;
-  }
-  .login_img {
-    width: 100%;
-    height: 100%;
-    border: 4px solid #d2efe1;
-  }
-
-  .login_text {
-    background-image: linear-gradient(120deg, #3bb77e, #d2efe1);
-  }
-  .btn {
-    height: 15%;
-    width: 25%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  h1 {
-    text-align: center;
-  }
-  .login_wrapper {
-    overflow-x: hidden;
-  }
-  .login_text {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(120deg, #3bb77e, #d2efe1);
-  }
-  .login_img {
-    width: 100%;
-    height: 100%;
-    border: 4px solid #d2efe1;
-  }
-
-  .email {
-    width: 70%;
-  }
-  .password {
-    width: 70%;
-  }
-  .input_fields input {
-    width: 100%;
-  }
-
-  .btn {
-    height: 15%;
-    width: 30%;
-  }
-  input[type="submit"] {
-    width: 100%;
-    height: 100%;
-  }
-  .forgot_pass {
-    text-align: center;
-    width: 100vw;
-  }
-}
 /*-----------------SignUp----------------------------*/
 
 .sign_wrapper {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
   flex-wrap: wrap;
 }
 
@@ -286,46 +222,47 @@ h1 {
 }
 
 .name {
-  margin: 30px;
+  margin: 10px;
   width: 70%;
+  margin-top: 60px;
 }
 
 .phonum_user {
-  margin: 30px;
+  margin: 10px;
 }
 
 .phonum {
   width: 70%;
-  margin: 30px;
+  margin: 10px;
 }
 .user {
   width: 70%;
-  margin: 30px;
+  margin: 10px;
 }
 
 .Email {
   width: 70%;
-  margin: 30px;
+  margin: 10px;
 }
 
 .address {
   width: 70%;
-  margin: 30px;
+  margin: 10px;
 }
 
 .location {
   width: 70%;
-  margin: 30px;
+  margin: 10px;
 }
 
 .signup_btn {
-  height: 40px;
-  width: 20%;
+  height: 6%;
+  width: 15%;
   border: 2px solid black;
   border-radius: 16px;
   background-color: #3bb77e;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 30px;
+  margin: 25px;
 
   color: #d2efe1;
   font-weight: bolder;
@@ -336,36 +273,4 @@ h1 {
 h3 {
   color: #f3f3f3;
 }
-@media only screen and (max-width: 700px) {
-  .sign_wrapper {
-    height: 110vh;
-  }
-  .phonum_user {
-    width: 100%;
-    margin: 0px;
-  }
-  .phonum {
-    width: 100%;
-    margin: 0px;
-  }
-  .user {
-    width: 100%;
-    margin: 0px;
-  }
-  .sign_img {
-    width: 100vw;
-  }
-  .sign_text {
-    width: 100vw;
-  }
-  .fname {
-    margin: 10px;
-  }
-  .lname {
-    margin: 10px;
-  }
-  .signup_btn {
-    height: 10%;
-    width: 10%;
-  }
-}
+/*-----------------Password----------------------------*/
