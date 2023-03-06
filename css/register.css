@@ -328,6 +328,13 @@ h3 {
   .sign_text {
     width: 100vw;
   }
+
+  .pass_text {
+    width: 100vw;
+  }
+  .pass_img {
+    width: 100vw;
+  }
 }
 @media only screen and (max-width: 600px) {
   h1 {
