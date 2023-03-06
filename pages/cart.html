@@ -10,8 +10,24 @@
 </head>
 
 <body>
-  <div class="navbar">
-    <img id="logo" src="../assets/images/MH-logo.svg" alt="" />
+  <div class="navbar flex jc-se ai-center">
+    <div class="navbar-logo">
+      <img src="../assets/images/MH-logo.svg" alt="" />
+    </div>
+    <div class="navbar-search flex jc-center ai-center">
+      <input class="navbar-search-input" type="text" placeholder="Search for items ..." />
+      <img class="navbar-search-input-img" src="../assets/images/search-icon.svg" alt="" />
+    </div>
+    <div class="navbar-icons flex jc-sa ai-center">
+      <div class="icon flex jc-sb ai-center">
+        <img class="navbar-icon" src="../assets/images/cart-icon.svg" alt="" />
+        <p class="icon-text">My Cart</p>
+      </div>
+      <div class="icon flex jc-sb ai-center">
+        <img class="navbar-icon" src="../assets/images/profile-icon.svg" alt="" />
+        <p id="display_full_name" class="icon-text"></p>
+      </div>
+    </div>
   </div>
   <table>
     <tr>
