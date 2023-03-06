@@ -1,7 +1,9 @@
 const display_full_name = document.getElementById("display_full_name");
 const all_categories = document.getElementById("all_categories");
 const all_products = document.getElementById("all_products");
+let prods = [];
 let fav_btn;
+let cart_btn;
 
 const baseURL = "http://localhost";
 
@@ -45,6 +47,7 @@ axios({
 }).then(async (res) => {
   const products = res.data.products;
   console.log(products);
+  prods = products; 
   products.forEach((product) => {
     all_products.innerHTML += `
     <div class="product-card flex column jc-center ai-center">
@@ -61,7 +64,7 @@ axios({
                 <button class="fav_btn unfaved-btn" value="${product.product_id}">
                   <img src="./assets/images/like-icon.svg" alt="" />
                 </button>
-                <button class="cart-btn">
+                <button class="cart-btn" value="${product.product_id}">
                   <img src="./assets/images/cart-icon.svg" alt="" />
                 </button>
               </div>
@@ -70,7 +73,8 @@ axios({
   });
 
   fav_btn = document.querySelectorAll(".fav_btn");
-  console.log(fav_btn);
+  cart_btn = document.querySelectorAll(".cart-btn");
+  console.log(cart_btn);
 
   fav_btn.forEach((button) => {
     button.addEventListener("click", async () => {
@@ -93,4 +97,30 @@ axios({
       }
     });
   });
+
+  cart_btn.forEach((button)=>{
+    button.addEventListener("click",()=>{
+      const clicked = button.value;
+      const product = prods.filter((prod)=>prod.product_id == clicked)[0];
+
+      const stringifiedSavedCart = localStorage.getItem("selectedProducts");
+      let savedCart;
+
+      if(stringifiedSavedCart){
+        savedCart = JSON.parse(stringifiedSavedCart);
+        const check = savedCart.filter((prod)=>prod.product_id == clicked)
+
+        if(check.length === 0){
+          savedCart.push(product)
+        } else {
+          savedCart = savedCart.filter((prod)=> prod.product_id != clicked)
+        }
+      } else {
+        savedCart = [product];
+      }
+
+      const stringifiedNew = JSON.stringify(savedCart)
+      localStorage.setItem("selectedProducts",stringifiedNew)
+    })
+  })
 });
