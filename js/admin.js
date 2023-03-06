@@ -15,5 +15,13 @@ function add_product() {
     method: "post",
     url: "http://localhost/ecommerce-backend/add_product.php",
     data: data,
-  });
+  })
+    .then((result) => {
+      if (result.data.status == "success") {
+        alert("Product Added!");
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+    });
 }
