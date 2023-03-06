@@ -16,10 +16,8 @@ table {
 td,
 th {
   border: 1px solid #dddddd;
-  text-align: left;
   text-align: center;
-  justify-content: center;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 tr:nth-child(even) {
@@ -31,7 +29,7 @@ button {
   border: none;
   color: white;
   font-weight: bold;
-  width: 50%;
+  width: 8rem;
   height: 30px;
 }
 
@@ -40,7 +38,7 @@ button:hover {
   border: none;
   color: white;
   font-weight: bold;
-  width: 50%;
+  width: 8rem;
   height: 35px;
   cursor: pointer;
   transition: 0.2s;
@@ -72,6 +70,27 @@ button:hover {
   width: 20%;
 }
 
+.last_row,.last{
+  font-weight: bold;
+  background-color: #3BB77E;
+  opacity: 0.8;
+}
 
+.edit{
+  display: flex;
+  gap: 20rem;
+  padding: 15px 15px;
+  object-fit: contain;
+  justify-content: center;
+  margin-top: 3rem;
+}
 
+#continue_shopping{
+  width: 10rem;
+}
+
+.clear_and_check{
+  display: flex;
+  gap: 2rem;  
+}
 
