@@ -10,4 +10,10 @@ function add_product() {
   data.append("name", name);
   data.append("brand", brand);
   data.append("price", price);
+
+  axios({
+    method: "post",
+    url: "http://localhost/ecommerce-backend/add_product.php",
+    data: data,
+  });
 }
