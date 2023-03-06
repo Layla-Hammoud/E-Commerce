@@ -94,8 +94,8 @@ img {
   height: 40%;
   width: 100%;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 input[type="text"] {
   border: 2px solid #333333;
@@ -251,8 +251,8 @@ h1 {
 }
 
 .signup_btn {
-  height: 6%;
-  width: 15%;
+  height: 40px;
+  width: 100px;
   border: 2px solid black;
   border-radius: 16px;
   background-color: #3bb77e;
@@ -318,6 +318,16 @@ h3 {
     height: 30px;
     width: 30px;
   }
+  .signup_btn {
+    height: 40px;
+    width: 100px;
+  }
+  .sign_img {
+    width: 100vw;
+  }
+  .sign_text {
+    width: 100vw;
+  }
 }
 @media only screen and (max-width: 600px) {
   h1 {
@@ -351,12 +361,13 @@ h3 {
     height: 30px;
     width: 30px;
   }
-  input[type="submit"] {
-    width: 100%;
-    height: 100%;
-  }
+
   .forgot_pass {
     text-align: center;
     width: 100vw;
+  }
+  .signup_btn {
+    height: 40px;
+    width: 100px;
   }
 }
