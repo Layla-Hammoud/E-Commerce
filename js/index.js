@@ -7,7 +7,7 @@ const baseURL = "http://localhost";
 
 const request_body = new FormData();
 
-request_body.append("user_id", 1);
+request_body.append("user_id", localStorage.getItem("user_id"));
 
 axios({
   method: "post",
@@ -42,7 +42,7 @@ axios({
 axios({
   method: "get",
   url: `${baseURL}/ecommerce-backend/get_products.php`,
-}).then((res) => {
+}).then(async (res) => {
   const products = res.data.products;
   console.log(products);
   products.forEach((product) => {
@@ -58,16 +58,39 @@ axios({
                 <p class="price">$ ${product.price}</p>
               </div>
               <div class="buttons flex jc-sa ai-center">
-                <button class="fav_btn" value="${product.product_id}">
+                <button class="fav_btn unfaved-btn" value="${product.product_id}">
                   <img src="./assets/images/like-icon.svg" alt="" />
                 </button>
-                <button>
+                <button class="cart-btn">
                   <img src="./assets/images/cart-icon.svg" alt="" />
                 </button>
               </div>
             </div>
           </div>`;
-    fav_btn = document.querySelectorAll(".fav_btn");
   });
+
+  fav_btn = document.querySelectorAll(".fav_btn");
   console.log(fav_btn);
+
+  fav_btn.forEach((button) => {
+    button.addEventListener("click", async () => {
+      const body = new FormData();
+      body.append("product_id", button.value);
+      body.append("user_id", localStorage.getItem("user_id"));
+      const response = await axios({
+        method: "post",
+        url: `${baseURL}/ecommerce-backend/add_favourite.php`,
+        data: body,
+      });
+
+      console.log(response);
+      if (response.data.status === "Added") {
+        button.classList.add("faved-btn");
+        button.classList.remove("unfaved-btn");
+      } else {
+        button.classList.remove("faved-btn");
+        button.classList.add("unfaved-btn");
+      }
+    });
+  });
 });
