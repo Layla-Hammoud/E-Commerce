@@ -21,11 +21,17 @@
         <div class="input_fields flex column jc-se ai-center">
           <div class="email flex column">
             <i class="fa-sharp fa-regular fa-user"></i>
-            <input type="text" placeholder="email" />
+            <input id="sign_email_input" type="text" placeholder="email" />
           </div>
           <div class="password flex column">
             <i class="fa-sharp fa-solid fa-lock"></i>
-            <input type="password" name="" id="" placeholder="password" />
+            <input
+              id="sign_password_input"
+              type="password"
+              name=""
+              id=""
+              placeholder="password"
+            />
           </div>
         </div>
         <div class="buttons flex jc-se">
@@ -34,7 +40,7 @@
             <p>Remember me</p>
           </div>
           <div class="forgot_pass flex column jc-start ai-end">
-            <input type="submit" value="login" name="" id="" />
+            <button id="signin_btn">Sign in</button>
             <p id="forgot_password" style="cursor: pointer">Forgot password?</p>
           </div>
         </div>
@@ -105,6 +111,8 @@
         <img src="../assets/images/fruitpunch.jpg" alt="" />
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../js/register.js"></script>
   </body>
 </html>
