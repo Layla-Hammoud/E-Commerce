@@ -164,7 +164,7 @@ img {
   font-size: 55px;
 }
 .sub-text {
-  font-family: quicksand-regular;
+  font-family: quicksand-bold;
   color: #333;
   font-size: 30px;
 }
@@ -190,6 +190,8 @@ img {
   color: #333;
   font-size: 32px;
   margin: auto;
+  width: 500px;
+  text-align: center;
 }
 
 .all-categories {
@@ -229,6 +231,12 @@ img {
 .products {
   width: 100vw;
   padding: 20px 100px;
+}
+.countdown {
+  font-family: quicksand-bold;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: rgb(223, 55, 55);
 }
 .all-products {
   width: 90%;
@@ -284,4 +292,68 @@ img {
   margin: 0 10px;
   border-radius: 5px;
   background-color: #cfffe6;
+}
+
+.mid-ad {
+  width: 100vw;
+  height: 40vh;
+}
+.ad {
+  height: 30vh;
+  width: 80vh;
+  background-image: url("/assets/images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c5ead9;
+  background-blend-mode: multiply;
+}
+
+.ad1 {
+  background-color: #cfffe6;
+}
+.ad2 {
+  background-color: #fff6e5;
+}
+
+.special {
+  width: 100vw;
+  height: 20vh;
+}
+
+.special-section {
+  padding: 10px;
+  width: 20%;
+}
+
+.special-sec-image {
+  width: 30%;
+  margin-right: 10px;
+}
+.special-sec-text > p {
+  padding: 10px;
+}
+
+.special-title {
+  font-family: quicksand-bold;
+  color: #333;
+  font-size: 20px;
+}
+.special-subtitle {
+  font-family: quicksand-regular;
+  color: #a4a4a4;
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  padding: 0 10%;
+  border-top: 2px solid #f3f3f3;
+}
+.copyrights {
+  font-size: 1rem;
+  font-family: quicksand-bold;
+  color: #333;
+}
+.contact-us > img {
+  margin: 0 10px;
 }

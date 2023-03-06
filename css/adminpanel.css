@@ -1,0 +1,90 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.child{
+    flex: 1;
+    height: 100px;
+    margin: 10px;
+}
+.nav-bar{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+    /* flex-basis: 80%; */
+    
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    color:black
+}
+.nav-link{
+    padding:20px;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1rem;
+    flex-basis: 100%;
+    /* flex-basis: 80%; */
+
+
+
+}
+.colors{
+    background-color: #3bb77e;
+    background-color: #f3f3f3;
+    color: #333;
+    background-color: #def9ec;
+
+}
+.user{
+    display: flex;
+    flex-direction: row;
+}
+.personal-info{
+    flex: 1;
+    height: 100px;
+    margin: 10px;
+}
+
+.item{
+    display:flex ;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin:20px;
+}
+
+.item img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.item-description{
+    margin-left: 5%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #burger-menu-icon{
+        display: block;
+        padding:20px
+    }
+
+    #link{
+        display: none;
+        
+    }
+ .product{
+    width:90%
+
+ }
+ .product-description{
+    font-size: 1.3rem;
+ }
+}
