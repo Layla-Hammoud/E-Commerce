@@ -182,7 +182,7 @@ gap: 2rem;
   margin-top: 10rem;
   gap: 10rem;
 }
-.personal_info,.profpic{
+.personal_info{
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -190,8 +190,17 @@ gap: 2rem;
 }
 .profpic{
   text-align: center;
+
 }
 .edit_profile{
   margin-left: 0;
 }
+.profpic{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  justify-content: end;
+}
+
 
