@@ -36,3 +36,34 @@ axios({
     `;
   });
 });
+
+axios({
+  method: "get",
+  url: `${baseURL}/ecommerce-backend/get_products.php`,
+}).then((res) => {
+  const products = res.data.products;
+  console.log(products);
+  products.forEach((product) => {
+    all_products.innerHTML += `
+    <div class="product-card flex column jc-center ai-center">
+            <div class="product-img">
+              <img src="./assets/images/products/${product.name}.svg" alt="" />
+            </div>
+            <div class="product-text flex column jc-sa">
+              <div class="product-info flex column jc-sb">
+                <p class="product-category">${product.type}</p>
+                <p class="product-name">${product.name}</p>
+                <p class="price">$ ${product.price}</p>
+              </div>
+              <div class="buttons flex jc-sa ai-center">
+                <button>
+                  <img src="./assets/images/like-icon.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/images/cart-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>`;
+  });
+});
