@@ -4,37 +4,65 @@
   border: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: quicksand-regular;
+  src: url("../assets/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: quicksand-light;
+  src: url("../assets/fonts/Quicksand-Light.ttf");
+}
+
+@font-face {
+  font-family: quicksand-bold;
+  src: url("../assets/fonts/Quicksand-Bold.ttf");
+}
+
+body {
+  font-family: quicksand-regular;
+}
 
 .flex {
   display: flex;
 }
+
 .column {
   flex-direction: column;
 }
+
 .jc-center {
   justify-content: center;
 }
+
 .jc-start {
   justify-content: flex-start;
 }
+
 .jc-end {
   justify-content: flex-end;
 }
+
 .jc-sb {
   justify-content: space-between;
 }
+
 .jc-sa {
   justify-content: space-around;
 }
+
 .jc-se {
   justify-content: space-evenly;
 }
+
 .ai-center {
   align-items: center;
 }
+
 .ai-start {
   align-items: flex-start;
 }
+
 .ai-end {
   align-items: flex-end;
 }
@@ -88,7 +116,7 @@
 
 
 table {
-  font-family: arial, sans-serif;
+  font-family: quicksand-regular;
   border-collapse: collapse;
   width: 100vw;
 }
@@ -111,6 +139,7 @@ button {
   font-weight: bold;
   width: 8rem;
   height: 30px;
+  font-family: quicksand-regular;
 }
 
 button:hover {
@@ -130,6 +159,7 @@ button:hover {
   width: 20%;
   height: 30px;
   text-align: center;
+  font-family: quicksand-regular;
 }
 
 #quantity_product3:focus,
@@ -150,13 +180,14 @@ button:hover {
   width: 20%;
 }
 
-.last_row,.last{
+.last_row,
+.last {
   font-weight: bold;
   background-color: #3BB77E;
   opacity: 0.8;
 }
 
-.edit{
+.edit {
   display: flex;
   gap: 20rem;
   padding: 15px 15px;
@@ -165,12 +196,12 @@ button:hover {
   margin-top: 3rem;
 }
 
-#continue_shopping{
+#continue_shopping {
   width: 10rem;
 }
 
-.clear_and_check{
+.clear_and_check {
   display: flex;
-  gap: 2rem;  
+  gap: 2rem;
 }
 

@@ -8,43 +8,264 @@
  
  <title>Admin Panel</title>
 </head>
-<body>
- <div class="nav-bar">
-     <div>
-         <img src="../assets/images/favicon.svg" width="120px" height="80px"/>
-     </div>
-     <div>
-         <div class="nav-link" id="link">
-             <a href="users.html" >Users</a>
-         </div>
-         <div class="nav-link" id="link">
-             <a href="products.html" >Categories</a>
-         </div> 
-         <div class="nav-link" id="link">
-             <a href="#" >Category1</a>
-            
-         </div> 
-         <div class="nav-link" id="link">
-             <a href="#" >Category2</a>
-            
-         </div> 
-         <div class="nav-link" id="link">
-             <a href="#" >Category3</a>
-            
-         </div> 
-         <div class="nav-link" id="link">
-             <a href="#" >Category4</a>
-            
-         </div>
-         </div> <div class="nav-link" id="link">
-             <a href="#" >Category5</a>
-         
-         </div>
-     </div>
- </div>
+<body class="main">
+    <div class="childleft"> 
+        <div class="nav-bar">
+            <div>
+                <img src="../assets/images/favicon.svg" width="120px" height="80px"/>
+            </div>
+            <div>
+                <div class="nav-link" id="link">
+                    <a href="users.html" >Users</a>
+                </div>
+                <div class="nav-link" id="link">
+                    <a href="#" >Categories</a>
+                </div> 
+                <div class="nav-link" id="link">
+                    <a href="#" >Category1</a>
+                    
+                </div> 
+                <div class="nav-link" id="link">
+                    <a href="#" >Category2</a>
+                    
+                </div> 
+                <div class="nav-link" id="link">
+                    <a href="#" >Category3</a>
+                    
+                </div> 
+                <div class="nav-link" id="link">
+                    <a href="#" >Category4</a>
+                    
+                </div>
+                </div> <div class="nav-link" id="link">
+                    <a href="#" >Category5</a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="childright">
+        <!-- users -->
+        <div class="container">
+            <!-- foreach -->
+            <div class="user">
+                <div>
+                    <img src="profile.png"  height="100%" width="150px"/>
+                </div>            
+                <div class="personal-info">
+                    <h4>User Name</h4>
+                    <h5>username</h5>
+                    <h5>BirthDate</h5>
+                    <h5>example@gmail.com</h5>
+                </div>
+                <div class="personal-info">
+                    <h4>Address</h4>
+                    <h5>Country</h5>
+                    <h5>City</h5>
+                    <h5>street</h5>
+                </div>
+            </div>
+        </div>
+        <!-- products -->
+        <div class="container">
+            <!-- foreach -->
+            <div class="product-card flex column jc-center ai-center">
+                <div class="product-img">
+                  <img src="./assets/images/products/${product.name}.svg" alt="" />
+                </div>
+                <div class="product-text flex column jc-sa">
+                  <div class="product-info flex column jc-sb">
+                    <p class="product-category">${product.type}</p>
+                    <p class="product-name">${product.name}</p>
+                    <p class="price">$ ${product.price}</p>
+                  </div>
+                  <div class="buttons flex jc-sa ai-center">
+                    <button class="fav_btn" value="${product.product_id}">
+                      <img src="./assets/images/like-icon.svg" alt="" />
+                    </button>
+                    <button>
+                      <img src="./assets/images/cart-icon.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <div class="product-card flex column jc-center ai-center">
+                <div class="product-img">
+                  <img src="./assets/images/products/${product.name}.svg" alt="" />
+                </div>
+                <div class="product-text flex column jc-sa">
+                  <div class="product-info flex column jc-sb">
+                    <p class="product-category">${product.type}</p>
+                    <p class="product-name">${product.name}</p>
+                    <p class="price">$ ${product.price}</p>
+                  </div>
+                  <div class="buttons flex jc-sa ai-center">
+                    <button class="fav_btn" value="${product.product_id}">
+                      <img src="./assets/images/like-icon.svg" alt="" />
+                    </button>
+                    <button>
+                      <img src="./assets/images/cart-icon.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <div class="product-card flex column jc-center ai-center">
+                <div class="product-img">
+                  <img src="./assets/images/products/${product.name}.svg" alt="" />
+                </div>
+                <div class="product-text flex column jc-sa">
+                  <div class="product-info flex column jc-sb">
+                    <p class="product-category">${product.type}</p>
+                    <p class="product-name">${product.name}</p>
+                    <p class="price">$ ${product.price}</p>
+                  </div>
+                  <div class="buttons flex jc-sa ai-center">
+                    <button class="fav_btn" value="${product.product_id}">Edit
+                      <!-- <img src="./assets/images/like-icon.svg" alt="" /> -->
+                    </button>
+                    <button>
+                        Remove
+                      <!-- <img src="./assets/images/cart-icon.svg" alt="Remove" /> -->
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <div class="product-card flex column jc-center ai-center">
+                <div class="product-img">
+                  <img src="./assets/images/products/${product.name}.svg" alt="" />
+                </div>
+                <div class="product-text flex column jc-sa">
+                  <div class="product-info flex column jc-sb">
+                    <p class="product-category">${product.type}</p>
+                    <p class="product-name">${product.name}</p>
+                    <p class="price">$ ${product.price}</p>
+                  </div>
+                  <div class="buttons flex jc-sa ai-center">
+                    <button class="fav_btn" value="${product.product_id}">Edit
+                        <!-- <img src="./assets/images/like-icon.svg" alt="" /> -->
+                      </button>
+                      <button>
+                          Remove
+                        <!-- <img src="./assets/images/cart-icon.svg" alt="Remove" /> -->
+                      </button>
+                  </div>
+                </div>
+            </div>
+            <div class="product-card flex column jc-center ai-center">
+                <div class="product-img">
+                  <img src="./assets/images/products/${product.name}.svg" alt="" />
+                </div>
+                <div class="product-text flex column jc-sa">
+                  <div class="product-info flex column jc-sb">
+                    <p class="product-category">${product.type}</p>
+                    <p class="product-name">${product.name}</p>
+                    <p class="price">$ ${product.price}</p>
+                  </div>
+                  <div class="buttons flex jc-sa ai-center">
+                    <button class="fav_btn" value="${product.product_id}">Edit
+                        <!-- <img src="./assets/images/like-icon.svg" alt="" /> -->
+                      </button>
+                      <button>
+                          Remove
+                        <!-- <img src="./assets/images/cart-icon.svg" alt="Remove" /> -->
+                      </button>
+                  </div>
+                </div>
+            </div>
+            <div class="product-card flex column jc-center ai-center">
+                <div class="product-img">
+                  <img src="./assets/images/products/${product.name}.svg" alt="" />
+                </div>
+                <div class="product-text flex column jc-sa">
+                  <div class="product-info flex column jc-sb">
+                    <p class="product-category">${product.type}</p>
+                    <p class="product-name">${product.name}</p>
+                    <p class="price">$ ${product.price}</p>
+                  </div>
+                  <div class="buttons flex jc-sa ai-center">
+                    <button class="fav_btn" value="${product.product_id}">
+                      <img src="./assets/images/like-icon.svg" alt="" />
+                    </button>
+                    <button>
+                      <img src="./assets/images/cart-icon.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+            </div>
+         <br>
+        </div>
+        <!-- add prodcut -->
+        <div class="container">
+        <H2>Add product</H2>
+            <form action="/action_page.php">
+              <label for="name">Product Name</label>
+              <input type="text" id="fname" name="name" placeholder="Product name..">
+          
+              <label for="brand">Brand</label>
+              <input type="text" id="brand" name="brand" placeholder="Brand..">
+              <label for="price">Price</label>
+              <input type="text" id="price" name="brand" placeholder="Price..">
+              <input type="submit" value="Add">
+            </form>
+        </div>
+        <H2>end of add product</H2>
+        <br>
+        <!-- udpate product -->
+        <div  class="container">
+        <H2>Update product</H2>
+        <div class="product-card flex column jc-center ai-center">
+          <div class="product-img">
+            <img src="./assets/images/products/${product.name}.svg" alt="" />
+          </div>
+          <div class="product-text flex column jc-sa">
+            <div class="product-info flex column jc-sb">
+              <p class="product-category">${product.type}</p>
+              <p class="product-name">${product.name}</p>
+              <p class="price">price</p>
+              <input type="text" id="price" name="price" placeholder="${product.price}">
+              <br>
+              <br>
 
- 
- 
+            </div>
+            <div>
+            <div class="buttons flex jc-sa ai-center">
+
+              <button class="fav_btn" value="${product.product_id}">
+                Save
+                <!-- <input type="submit" value="Save"> -->
+                
+                <!-- <img src="./assets/images/like-icon.svg" alt="" /> -->
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+        </div> -->
+    </div>
         
 </body>
 </html>
+
+
+
+
