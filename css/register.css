@@ -82,11 +82,6 @@
   flex-wrap: wrap;
 }
 
-.pass_wrapper {
-  height: 100vh;
-  width: 100vw;
-}
-
 img {
   height: 100%;
   width: 100%;
@@ -274,3 +269,30 @@ h3 {
   color: #f3f3f3;
 }
 /*-----------------Password----------------------------*/
+
+.pass_wrapper {
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.pass_text {
+  height: 100%;
+  width: 50%;
+  background-image: linear-gradient(234deg, #d2efe1, #f3f3f3);
+}
+.pass_img {
+  height: 100%;
+  width: 50%;
+}
+
+.pass_fields {
+  width: 50%;
+  margin: 15px;
+}
+
+.prompt {
+  text-align: left;
+  width: 70%;
+  margin: 30px;
+}

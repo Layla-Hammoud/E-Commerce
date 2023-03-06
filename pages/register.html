@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="login_wrapper flex ">
+    <div class="login_wrapper flex page ">
         <div class="login_img flex"><img src="../assets/images/fruitpunch.jpg" alt=""></div>
         <div class="login_text flex column ">
             <h1>Signining in is one-click away!</h1>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="forgot_pass flex column jc-start ai-end">
                     <input type="submit" value="login" name="" id="">
-                    <p>Forgot password?</p>
+                    <p id="forgot_password" style="cursor: pointer;">Forgot password?</p>
 
                 </div>
             </div>
@@ -51,7 +51,7 @@
     </div>
 
 
-    <div class="sign_wrapper  flex ">
+    <div class="sign_wrapper  hide page">
         <div class="sign_text flex column ai-center">
 
             <div class="name flex jc-sa ">
@@ -72,18 +72,18 @@
         <div class="sign_img"><img src="../assets/images/fruitpunch.jpg" alt="">
         </div>
     </div>
-    <div class="pass_wrapper flex">
-        <div class="pass_text">
+    <div class="pass_wrapper hide page">
+        <div class="pass_text flex column jc-center ai-center">
             <div class="prompt">
-                <h2>Lorem ipsum dolor sit?</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                <h2>Forgot Your Password?</h2>
+                <h4>Please fill the forum below to get your password back.</h4>
             </div>
-            <div class="pass_fields"><input type="text" class="pass_email" placeholder="email"></div>
-            <input type="password" class="pass_pass" placeholder="password">
+            <div class="pass_fields flex column"><input type="text" class="pass_email" placeholder="email"><input
+                    type="password" class="pass_pass" placeholder="password"></div>
+            <p id="SignIn" style="cursor: pointer;">SignIn</p>
         </div>
-        <div class="div pass_img"></div>
-    </div>
-
+        <div class="div pass_img"><img src="../assets/images/fruitpunch.jpg" alt=""></div>
+        <script src="../js/register.js"></script>
 </body>
 
 </html>
