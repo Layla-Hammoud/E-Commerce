@@ -291,6 +291,14 @@ img {
   padding: 5px 15px;
   margin: 0 10px;
   border-radius: 5px;
+}
+.cart-btn {
+  background-color: #cfffe6;
+}
+.faved-btn {
+  background-color: #3bb77e;
+}
+.unfaved-btn {
   background-color: #cfffe6;
 }
 

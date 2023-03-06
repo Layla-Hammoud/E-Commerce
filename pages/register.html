@@ -1,89 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/register.css">
-    <script src="https://kit.fontawesome.com/0d2f60f8ff.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <script
+      src="https://kit.fontawesome.com/0d2f60f8ff.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <div class="login_wrapper flex page ">
-        <div class="login_img flex"><img src="../assets/images/fruitpunch.jpg" alt=""></div>
-        <div class="login_text flex column ">
-
-            <div class="input_fields flex column jc-se ai-center">
-                <div class="email flex column">
-
-                    <i class="fa-sharp fa-regular fa-user"></i> <input type="text" placeholder="email">
-                </div>
-                <div class="password flex column ">
-                    <i class="fa-sharp fa-solid fa-lock"></i> <input type="password" name="" id=""
-                        placeholder="password">
-                </div>
-            </div>
-            <div class="buttons flex jc-se">
-                <div class="rememberme flex column">
-
-                    <button class="btn"></button>
-                    <p>Remember me</p>
-
-                </div>
-                <div class="forgot_pass flex column jc-start ai-end">
-                    <input type="submit" value="login" name="" id="">
-                    <p id="forgot_password" style="cursor: pointer;">Forgot password?</p>
-
-                </div>
-            </div>
-
-            <h1>Or Singin Using!</h1>
-            <div class="logos flex jc-se"><a href=""><img src="../assets/images/twitter-logo-green.svg"></a>
-                <a href=""><img src="../assets/images/facebook-logo-green.svg" alt=""></a><a href=""><img
-                        src="../assets/images/linkedin-logo-green.svg" alt=""></a>
-            </div>
-
-
+  <body>
+    <div class="login_wrapper flex page">
+      <div class="login_img flex">
+        <img src="../assets/images/MH-logo.svg" alt="" />
+      </div>
+      <div class="login_text flex column jc-center ai-center">
+        <div class="input_fields flex column jc-se ai-center">
+          <div class="email flex column">
+            <i class="fa-sharp fa-regular fa-user"></i>
+            <input id="sign_email_input" type="text" placeholder="email" />
+          </div>
+          <div class="password flex column">
+            <i class="fa-sharp fa-solid fa-lock"></i>
+            <input
+              id="sign_password_input"
+              type="password"
+              name=""
+              id=""
+              placeholder="password"
+            />
+          </div>
+        </div>
+        <div class="buttons flex jc-se">
+          <div class="rememberme flex column">
+            <button class="btn"></button>
+            <p>Remember me</p>
+          </div>
+          <div class="forgot_pass flex column jc-start ai-end">
+            <button id="signin_btn">Sign in</button>
+            <p id="forgot_password" style="cursor: pointer">Forgot password?</p>
+          </div>
+        </div>
+        <div class="have-account">
+          <p id="have_account">Don't have account ?</p>
         </div>
 
+        <h1>Or Singin Using!</h1>
+        <div class="logos flex jc-se">
+          <a href=""><img src="../assets/images/twitter-logo-green.svg" /></a>
+          <a href=""
+            ><img src="../assets/images/facebook-logo-green.svg" alt="" /></a
+          ><a href=""
+            ><img src="../assets/images/linkedin-logo-green.svg" alt=""
+          /></a>
+        </div>
+      </div>
     </div>
 
-
-    <div class="sign_wrapper  flex page">
-        <div class="sign_text flex column ai-center">
-
-            <div class="name flex jc-sa ">
-                <input type="text" class="fname" placeholder="Name"><input type="text" class="lname"
-                    placeholder="LastName">
-            </div>
-            <div class="phonum_user flex jc-sa"><input type="text" class="phonum" placeholder="Phone"><input type="text"
-                    class="user" placeholder="username"></div>
-            <input type="text" placeholder="Email" class="Email">
-            <input type="text" placeholder="address" class="address">
-            <div class="location flex jc-sa"><input type="text" placeholder="city"><input type="text"
-                    placeholder="State">
-            </div>
-            <input type="text" placeholder="DOB">
-            <input class="signup_btn" type="submit" value="SignUp">
+    <div class="sign_wrapper flex page">
+      <div class="sign_text flex column ai-center">
+        <div class="name flex jc-sa">
+          <input type="text" class="fname" placeholder="Name" /><input
+            type="text"
+            class="lname"
+            placeholder="LastName"
+          />
         </div>
-
-        <div class="sign_img"><img src="../assets/images/fruitpunch.jpg" alt="">
+        <div class="phonum_user flex jc-sa">
+          <input type="text" class="phonum" placeholder="Phone" /><input
+            type="text"
+            class="user"
+            placeholder="username"
+          />
         </div>
+        <input type="text" placeholder="Email" class="Email" />
+        <input type="text" placeholder="address" class="address" />
+        <div class="location flex jc-sa">
+          <input type="text" placeholder="city" /><input
+            type="text"
+            placeholder="State"
+          />
+        </div>
+        <input type="text" placeholder="DOB" />
+        <input class="signup_btn" type="submit" value="SignUp" />
+      </div>
+
+      <div class="sign_img">
+        <img src="../assets/images/fruitpunch.jpg" alt="" />
+      </div>
     </div>
     <div class="pass_wrapper flex page">
-        <div class="pass_text flex column jc-center ai-center">
-            <div class="prompt">
-                <h2>Forgot Your Password?</h2>
-                <h4>Please fill the forum below to get your password back.</h4>
-            </div>
-            <div class="pass_fields flex column"><input type="text" class="pass_email" placeholder="email"><input
-                    type="password" class="pass_pass" placeholder="password"></div>
-            <p id="SignIn" style="cursor: pointer;">SignIn</p>
+      <div class="pass_text flex column jc-center ai-center">
+        <div class="prompt">
+          <h2>Forgot Your Password?</h2>
+          <h4>Please fill the forum below to get your password back.</h4>
         </div>
-        <div class="div pass_img"><img src="../assets/images/fruitpunch.jpg" alt=""></div>
-        <script src="../js/register.js"></script>
-</body>
+        <div class="pass_fields flex column">
+          <input type="text" class="pass_email" placeholder="email" /><input
+            type="password"
+            class="pass_pass"
+            placeholder="password"
+          />
+        </div>
+        <p id="SignIn" style="cursor: pointer">SignIn</p>
+      </div>
+      <div class="div pass_img">
+        <img src="../assets/images/fruitpunch.jpg" alt="" />
+      </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/register.js"></script>
+  </body>
 </html>
