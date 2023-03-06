@@ -29,8 +29,8 @@ axios({
             <img src="./assets/images/diary-category.svg" alt="" />
          </div>
         <div class="category-text flex column jc-se">
-            <p class="category-title"></p>
-            <p class="category-sub">items</p>
+            <p class="category-title">${category.type}</p>
+            <p class="category-sub">${categories.length} items</p>
         </div>
     </div>
     `;
