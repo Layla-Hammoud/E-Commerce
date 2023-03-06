@@ -1,11 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-start {
+  justify-content: flex-start;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-se {
+  justify-content: space-evenly;
+}
+.ai-center {
+  align-items: center;
+}
+.ai-start {
+  align-items: flex-start;
+}
+.ai-end {
+  align-items: flex-end;
+}
+
+/* Mhmd Atout */
+.wrapper {
+  width: 100vw;
+}
+
 .navbar {
+  width: 100vw;
+  height: 10vh;
+  border: 2px #f3f3f3 solid;
+}
+
+.navbar-search-input {
+  width: 400px;
+  height: 40px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 5px 0 0 5px;
+}
+
+.navbar-search-input-img {
+  background-color: #3bb77e;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+}
+
+.navbar-icons {
+  width: 30%;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.navbar-icon {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+.icon-text {
+  color: #333;
+  font-size: 15px;
+  font-family: quicksand-bold;
+}
+
+
+
+
+
+
+
+/* .navbar {
   display: flex;
   width: 100vw;
   height: 10vh;
   text-align: left;
   justify-content: space-around;
   background-color: #F3F3F3;
-}
+} */
 
 table {
   font-family: arial, sans-serif;
