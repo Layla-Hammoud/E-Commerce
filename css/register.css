@@ -154,8 +154,8 @@ i {
 }
 
 .forgot_pass input[type="Submit"] {
-  height: 100%;
-  width: 20%;
+  height: 30px;
+  width: 100px;
   background-color: #333333;
   border-radius: 8px;
   color: #d2efe1;
@@ -164,8 +164,8 @@ i {
 }
 
 .btn {
-  height: 65%;
-  width: 19%;
+  height: 25px;
+  width: 25px;
   border: 2px solid #333333;
   border-radius: 6px;
   margin-right: auto;
@@ -295,4 +295,68 @@ h3 {
   text-align: left;
   width: 70%;
   margin: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .login_wrapper {
+    overflow-x: hidden;
+  }
+  .login_text {
+    width: 100%;
+    height: 100%;
+  }
+  .login_img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #d2efe1;
+  }
+
+  .login_text {
+    background-image: linear-gradient(120deg, #3bb77e, #d2efe1);
+  }
+  .btn {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
+  .login_wrapper {
+    overflow-x: hidden;
+  }
+  .login_text {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #3bb77e, #d2efe1);
+  }
+  .login_img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #d2efe1;
+  }
+
+  .email {
+    width: 70%;
+  }
+  .password {
+    width: 70%;
+  }
+  .input_fields input {
+    width: 100%;
+  }
+
+  .btn {
+    height: 30px;
+    width: 30px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    height: 100%;
+  }
+  .forgot_pass {
+    text-align: center;
+    width: 100vw;
+  }
 }
