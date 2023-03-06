@@ -104,6 +104,7 @@ input[type="text"] {
   border-radius: 16px;
   margin-top: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 input[type="password"] {
   margin-top: 10px;
@@ -112,9 +113,10 @@ input[type="password"] {
   padding: 6px;
   border-radius: 16px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 ::placeholder {
-  font-size: large;
+  font-size: medium;
   margin: auto;
   background-color: #d2efe1;
   color: #333333;
@@ -317,6 +319,9 @@ h3 {
   .btn {
     height: 30px;
     width: 30px;
+  }
+  .buttons P {
+    font-size: medium;
   }
   .signup_btn {
     height: 40px;
