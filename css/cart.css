@@ -159,6 +159,7 @@ button:hover {
   width: 20%;
   height: 30px;
   text-align: center;
+  font-family: quicksand-regular;
 }
 
 #quantity_product3:focus,
