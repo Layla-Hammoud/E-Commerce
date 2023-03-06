@@ -46,17 +46,32 @@ button:hover {
   transition: 0.2s;
 }
 
-#quantity_product3:focus, #quantity_product2:focus,#quantity_product1:focus {
-  border: 1px solid #3BB77E ;
+#quantity_product3,
+#quantity_product2,
+#quantity_product1 {
+  width: 20%;
+  height: 30px;
+  text-align: center;
+}
+
+#quantity_product3:focus,
+#quantity_product2:focus,
+#quantity_product1:focus {
+  border: 1px solid #3BB77E;
   outline: none;
   text-align: center;
   width: 20%;
 }
 
-#quantity_product3, #quantity_product2,#quantity_product1 {
+#quantity_product3:focus::placeholder,
+#quantity_product2:focus::placeholder,
+#quantity_product1:focus::placeholder {
+  opacity: 0;
   outline: none;
-  width: 20%;
-  height: 30px;
   text-align: center;
-  border: none;
-}     
+  width: 20%;
+}
+
+
+
+
