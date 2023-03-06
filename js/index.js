@@ -15,3 +15,24 @@ axios({
   const user = res.data.user;
   display_full_name.innerText = `${user.first_name} ${user.last_name}`;
 });
+
+axios({
+  method: "get",
+  url: `${baseURL}/ecommerce-backend/get_categories.php`,
+}).then((res) => {
+  const categories = res.data.categories;
+  console.log(categories);
+  categories.forEach((category) => {
+    all_categories.innerHTML += `
+    <div class="category-card">
+        <div class="category-img">
+            <img src="./assets/images/diary-category.svg" alt="" />
+         </div>
+        <div class="category-text flex column jc-se">
+            <p class="category-title"></p>
+            <p class="category-sub">items</p>
+        </div>
+    </div>
+    `;
+  });
+});
