@@ -192,31 +192,27 @@
                   </div>
                 </div>
             </div>
-         
+         <br>
         </div>
         <!-- add prodcut -->
         <div class="container">
+        <H2>Add product</H2>
             <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="name">Product Name</label>
+              <input type="text" id="fname" name="name" placeholder="Product name..">
           
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
+              <label for="brand">Brand</label>
+              <input type="text" id="brand" name="brand" placeholder="Brand..">
+              <label for="price">Price</label>
+              <input type="text" id="price" name="brand" placeholder="Price..">
+              <input type="submit" value="Add">
             </form>
         </div>
+        <H2>end of add product</H2>
+        <br>
         <!-- udpate product -->
+        <div  class="container">
+        <H2>Update product</H2>
         <div class="product-card flex column jc-center ai-center">
           <div class="product-img">
             <img src="./assets/images/products/${product.name}.svg" alt="" />
@@ -226,23 +222,24 @@
               <p class="product-category">${product.type}</p>
               <p class="product-name">${product.name}</p>
               <p class="price">price</p>
-              <input type="text" id="fname" name="firstname" placeholder="${product.price}">
+              <input type="text" id="price" name="price" placeholder="${product.price}">
+              <br>
+              <br>
 
             </div>
+            <div>
             <div class="buttons flex jc-sa ai-center">
-              <input type="submit" value="Submit">
 
               <button class="fav_btn" value="${product.product_id}">
-                <input type="submit" value="Submit">
                 Save
+                <!-- <input type="submit" value="Save"> -->
+                
                 <!-- <img src="./assets/images/like-icon.svg" alt="" /> -->
               </button>
-              <button>
-                  Remove
-                <!-- <img src="./assets/images/cart-icon.svg" alt="Remove" /> -->
-              </button>
+            </div>
             </div>
           </div>
+        </div>
         <!-- <div class="container">
             <form action="/action_page.php">
               <label for="fname">First Name</label>
