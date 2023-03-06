@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/EditProfile.css">
+</head>
+
+<body>
+  <div class="navbar flex jc-se ai-center">
+    <div class="navbar-logo">
+      <img src="../assets/images/MH-logo.svg" alt="" />
+    </div>
+    <div class="navbar-search flex jc-center ai-center">
+      <input class="navbar-search-input" type="text" placeholder="Search for items ..." />
+      <img class="navbar-search-input-img" src="../assets/images/search-icon.svg" alt="" />
+    </div>
+    <div class="navbar-icons flex jc-sa ai-center">
+      <div class="icon flex jc-sb ai-center">
+        <img class="navbar-icon" src="../assets/images/cart-icon.svg" alt="" />
+        <p class="icon-text">My Cart</p>
+      </div>
+      <div class="icon flex jc-sb ai-center">
+        <img class="navbar-icon" src="../assets/images/profile-icon.svg" alt="" />
+        <p id="display_full_name" class="icon-text"></p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="profpic">
+      <img id="user_profile" src="#">
+      <button id="edit_image">Edit Image</button>
+    </div>
+    <div class="personal_info">
+      <p id="user_fname">Full Name</p>
+      <p id="user_name">Username</p>
+      <p id="phone_number">00-000000</p>
+      <p id="address">Beirut/XXXXXXXX</p>
+      <button id="edit_profile">Edit Profile</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -6,11 +6,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" href="../css/checkout.css">
 </head>
 
 <body>
-
+  <div class="navbar flex jc-se ai-center">
+    <div class="navbar-logo">
+      <img src="../assets/images/MH-logo.svg" alt="" />
+    </div>
+    <div class="navbar-search flex jc-center ai-center">
+      <input class="navbar-search-input" type="text" placeholder="Search for items ..." />
+      <img class="navbar-search-input-img" src="../assets/images/search-icon.svg" alt="" />
+    </div>
+    <div class="navbar-icons flex jc-sa ai-center">
+      <div class="icon flex jc-sb ai-center">
+        <img class="navbar-icon" src="../assets/images/cart-icon.svg" alt="" />
+        <p class="icon-text">My Cart</p>
+      </div>
+      <div class="icon flex jc-sb ai-center">
+        <img class="navbar-icon" src="../assets/images/profile-icon.svg" alt="" />
+        <p id="display_full_name" class="icon-text"></p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="info">
+      <div class="info_box">
+        <table>
+          <tr>
+            <td>
+              <p>Contact</p>
+            </td>
+            <td>
+              <p id="user_phone">00-000000</p>
+            </td>
+            <td>
+              <a id="changePhone">Change</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Ship to</p>
+            </td>
+            <td>
+              <p id="user_address">Address</p>
+            </td>
+            <td>
+              <a id="changeAddress">Change</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="pay_method">
+        <div class="pay">
+          <p class="p">Payment</p>
+        </div>
+        <div class="pay_btn">
+          <button id="delivery">Cash on Delivery</button>
+          <button id="credit">Credit Card</button>
+        </div>
+      </div>
+    </div>
+    <div class="final_order">
+      <div class="product">
+        <p id="prod_name1">Name:</p>
+        <p id="prod_price1">Price:</p>
+      </div>
+      <div class="product">
+        <p id="prod_name2">Name:</p>
+        <p id="prod_price2">Price:</p>
+      </div>
+      <div class="product">
+        <p id="prod_name3">Name:</p>
+        <p id="prod_price3">Price:</p>
+      </div>
+      <div class="result">
+        <div class="ft1">
+          <p>Delivery</p>
+          <p>5$</p>
+        </div>
+        <div class="ft1">
+          <p>Total Due</p>
+          <p id="total_with_dlv">50$</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
