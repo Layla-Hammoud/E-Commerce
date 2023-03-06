@@ -1,6 +1,8 @@
 const display_full_name = document.getElementById("display_full_name");
 const all_categories = document.getElementById("all_categories");
 const all_products = document.getElementById("all_products");
+let fav_btn;
+
 const baseURL = "http://localhost";
 
 const request_body = new FormData();
@@ -56,7 +58,7 @@ axios({
                 <p class="price">$ ${product.price}</p>
               </div>
               <div class="buttons flex jc-sa ai-center">
-                <button>
+                <button class="fav_btn" value="${product.product_id}">
                   <img src="./assets/images/like-icon.svg" alt="" />
                 </button>
                 <button>
@@ -65,5 +67,7 @@ axios({
               </div>
             </div>
           </div>`;
+    fav_btn = document.querySelectorAll(".fav_btn");
   });
+  console.log(fav_btn);
 });
