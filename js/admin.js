@@ -25,3 +25,5 @@ function add_product() {
       console.error(err);
     });
 }
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>;
