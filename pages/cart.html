@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <script src="../js/cart.js" ></script>
   <div class="navbar flex jc-se ai-center">
     <div class="navbar-logo">
       <img src="../assets/images/MH-logo.svg" alt="" />
@@ -29,12 +30,17 @@
       </div>
     </div>
   </div>
-  <table>
+  <table id="cardItemsTable">
+    <thead>
     <tr>
       <th>Product</th>
       <th>Price</th>
     </tr>
-    <tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+    <!-- <tr>
       <td id="product1">
         <img id="img_product1" src="#">
         <p id="Name_product1">Name</p>
@@ -73,17 +79,20 @@
       <td class="last_row">
         <p id="total_price">60$</p>
       </td>
-    </tr>
+    </tr> -->
   </table>
   <div class="edit">
     <div class="continue">
       <button id="continue_shopping">Continue shopping</button>
     </div>
     <div class="clear_and_check">
-      <button id="clear">Clear my CART</button>
-      <button id="check">Check Out</button>
+      <button id="clear" onclick="removeCard();">Clear my CART</button>
+      <button id="check" onclick="CheckOut();" >Check Out</button>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../js/cart.js"></script>
 </body>
 
 </html>
