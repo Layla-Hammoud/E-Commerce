@@ -30,11 +30,10 @@ axios({
     all_categories.innerHTML += `
     <div class="category-card">
         <div class="category-img">
-            <img src="./assets/images/diary-category.svg" alt="" />
+            <img src="./assets/images/categories/${category.type}.svg" alt="" />
          </div>
         <div class="category-text flex column jc-se">
             <p class="category-title">${category.type}</p>
-            <p class="category-sub">${categories.length} items</p>
         </div>
     </div>
     `;
@@ -47,7 +46,7 @@ axios({
 }).then(async (res) => {
   const products = res.data.products;
   console.log(products);
-  prods = products; 
+  prods = products;
   products.forEach((product) => {
     all_products.innerHTML += `
     <div class="product-card flex column jc-center ai-center">
@@ -98,29 +97,29 @@ axios({
     });
   });
 
-  cart_btn.forEach((button)=>{
-    button.addEventListener("click",()=>{
+  cart_btn.forEach((button) => {
+    button.addEventListener("click", () => {
       const clicked = button.value;
-      const product = prods.filter((prod)=>prod.product_id == clicked)[0];
+      const product = prods.filter((prod) => prod.product_id == clicked)[0];
 
       const stringifiedSavedCart = localStorage.getItem("selectedProducts");
       let savedCart;
 
-      if(stringifiedSavedCart){
+      if (stringifiedSavedCart) {
         savedCart = JSON.parse(stringifiedSavedCart);
-        const check = savedCart.filter((prod)=>prod.product_id == clicked)
+        const check = savedCart.filter((prod) => prod.product_id == clicked);
 
-        if(check.length === 0){
-          savedCart.push(product)
+        if (check.length === 0) {
+          savedCart.push(product);
         } else {
-          savedCart = savedCart.filter((prod)=> prod.product_id != clicked)
+          savedCart = savedCart.filter((prod) => prod.product_id != clicked);
         }
       } else {
         savedCart = [product];
       }
 
-      const stringifiedNew = JSON.stringify(savedCart)
-      localStorage.setItem("selectedProducts",stringifiedNew)
-    })
-  })
+      const stringifiedNew = JSON.stringify(savedCart);
+      localStorage.setItem("selectedProducts", stringifiedNew);
+    });
+  });
 });
