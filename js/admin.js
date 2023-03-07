@@ -81,3 +81,36 @@ productContainer.onclick = (e) => {
       });
   }
 };
+// display Users
+let userContainer = document.getElementById("usersListing");
+axios({
+  method: "get",
+  url: `http://localhost/ecommerce-backend/displayUsers.php`,
+}).then(async (res) => {
+  const users = res.data.users;
+  console.log(users);
+  prods = users;
+  users.forEach((user) => {
+    userContainer.innerHTML += `
+    <div class="product-card flex column jc-center ai-center">
+        <div class="user">
+        <div>
+            <img src="profile.png" height="100%" width="150px" />
+        </div>
+        <div class="personal-info">
+            <h4>${user.first_name} ${user.last_name}</h4>
+            <h5>${user.username}/h5>
+            <h5>${user.dob}</h5>
+            <h5>${user.email}</h5>
+        </div>
+        <div class="personal-info">
+            <h4>Address</h4>
+            <h5>${user.country}</h5>
+            <h5>${user.city}</h5>
+            <h5>${user.street}</h5>
+        </div>
+    </div>
+    </div>
+     `;
+  });
+});
