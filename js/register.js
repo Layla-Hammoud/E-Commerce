@@ -17,6 +17,7 @@ document.getElementById("have_account").onclick = () => {
 };
 
 const signin_btn = document.getElementById("signin_btn");
+const signup_btn = document.getElementById("signup_btn");
 
 console.log(signin_btn);
 
@@ -24,6 +25,7 @@ signin_btn.addEventListener("click", async () => {
   console.log("clicked");
   const sign_email_input = document.getElementById("sign_email_input");
   const sign_password_input = document.getElementById("sign_password_input");
+  const incorrect = document.getElementById("incorrect");
 
   const requestBody = new FormData();
   requestBody.append("credentials", sign_email_input.value);
@@ -39,5 +41,5 @@ signin_btn.addEventListener("click", async () => {
   if (response.data.id) {
     window.location.href = "../index.html";
     localStorage.setItem("user_id", response.data.id);
-  }
+  } else incorrect.innerText = response.data.message;
 });
