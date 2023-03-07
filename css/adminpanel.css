@@ -16,6 +16,40 @@
     font-family: quicksand-bold;
     src: url("../assets/fonts/Quicksand-Bold.ttf");
   }
+  .flex {
+    display: flex;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .jc-center {
+    justify-content: center;
+  }
+  .jc-start {
+    justify-content: flex-start;
+  }
+  .jc-end {
+    justify-content: flex-end;
+  }
+  .jc-sb {
+    justify-content: space-between;
+  }
+  .jc-sa {
+    justify-content: space-around;
+  }
+  .jc-se {
+    justify-content: space-evenly;
+  }
+  .ai-center {
+    align-items: center;
+  }
+  .ai-start {
+    align-items: flex-start;
+  }
+  .ai-end {
+    align-items: flex-end;
+  }
+  
 .main{
     display: flex;
     flex-direction: row;
@@ -71,6 +105,12 @@
     background-color: #def9ec;
 
 }
+.user_wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(120deg, #3bb77e, #d2efe1);
+  flex-wrap: wrap;
+}
 .user{
     display: flex;
     flex-direction: row;
@@ -117,6 +157,22 @@
  }
 }
 /* products */
+.product_wrapper {
+  height: 100vh;
+width: 100vw;
+flex-wrap: wrap;
+  /* height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(120deg, #3bb77e, #d2efe1);
+  flex-wrap: wrap; */
+}
+
+.update_wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(120deg, #3bb77e, #d2efe1);
+  flex-wrap: wrap;
+}
 .products {
     width: 100vw;
     padding: 20px 100px;
@@ -229,7 +285,7 @@
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #3bb77e;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -238,7 +294,7 @@
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #f3f3f3;
   }
   
   /* .container {
