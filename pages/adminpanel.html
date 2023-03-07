@@ -47,6 +47,8 @@
         </div>
     </div>
     </div>
+    <div class="user_wrapper flex page">
+
     <div class="childright">
         <!-- users -->
         <div class="container">
@@ -69,30 +71,38 @@
                 </div>
             </div>
         </div>
+        </div>
         <!-- products -->
-        <div class="container" id="productListing">
-            <!-- add product -->
-            <div class="container">
-                <br>
-                <H2>Add product</H2>
-                <form method="POST" action="http://localhost/ecommerce-backend/add_product.php">
-                    <label for="name">Product Name</label>
-                    <input type="text" id="fname" name="name" placeholder="Product name..">
-                    <label for="brand">Brand</label>
-                    <input type="text" id="brand" name="brand" placeholder="Brand..">
-                    <label for="price">Price</label>
-                    <input type="text" id="price" name="price" placeholder="Price..">
-                    <input type="submit" id="submit_btn" value="Add">
-                </form>
+        <div class="product_wrapper flex page">
+
+            <div class="container" id="productListing">
+                <!-- add product -->
+
+                <div class="container">
+                    <br>
+                    <H2>Add product</H2>
+                    <form method="POST" action="http://localhost/ecommerce-backend/add_product.php">
+                        <label for="name">Product Name</label>
+                        <input type="text" id="fname" name="name" placeholder="Product name..">
+                        <label for="brand">Brand</label>
+                        <input type="text" id="brand" name="brand" placeholder="Brand..">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" name="price" placeholder="Price..">
+                        <input type="submit" id="submit_btn" value="Add">
+                    </form>
+                </div>
             </div>
+        </div>
             <br>
             <!-- <H2>end of add product</H2> -->
             <br>
             <br>
+        <div class="update_wrapper flex page">
+
             <!-- udpate product -->
             <div class="container">
                 <H2>Update product</H2>
-                <!-- <div class="product-card flex column jc-center ai-center">
+                <div class="product-card flex column jc-center ai-center">
                     <div class="product-img">
                         <img src="./assets/images/products/${product.name}.svg" alt="" />
                     </div>
@@ -118,28 +128,8 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <!-- <div class="container">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-            </form>
-        </div> -->
+                </div>
+        </div>
             </div>
             <script src="../js/admin.js"></script>
 
